@@ -1,0 +1,36 @@
+<section>
+	
+	<div class="search">
+	
+		<input type="text" placeholder="Search For a Person" ng-model="query" class="form-control">
+		<br>
+		<label class="formgroup">
+			By:
+			<select ng-model="personsOrder">
+				<option value="name">Name</option>
+				<option value="company">Company</option>
+			</select>
+		</label>
+
+		<label class="formgroup">
+			<input type="radio" ng-model="direction" checked name="direction">
+			ascending
+		</label>
+		<label class="formgroup">
+			<input type="radio" ng-model="direction" name="direction" value="reverse">
+			descending
+		</label>	
+
+	</div>
+	<hr class="hr-divider-top">
+	<ul>
+		
+		<li ng-repeat="person in persons |filter:query |orderBy: personsOrder:direction" class="pointer" title="Click to view {{person.name}}'s Bio">
+			 <h4> {{person.name}} </h4>
+			 <p> {{ person.title + ', '+ person.company }} </p>
+			 <hr class="hr-divider">
+		</li>
+
+	</ul>
+
+</section>

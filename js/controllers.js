@@ -1,6 +1,10 @@
-var App = angular.module("myApp", []);
+/*
+All controllers for the App
+@ __author = Denis Karanja
+*/
+var personsController = angular.module("personsController", []);
 
-App.controller('AuthorController', ['$scope', '$http', function AuthorController($scope, $http){
+personsController.controller('ListController', ['$scope', '$http', function AuthorController($scope, $http){
 
 		$http.get("js/data.json").success(function(data){
 			$scope.persons = data;
