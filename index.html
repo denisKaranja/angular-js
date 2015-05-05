@@ -2,10 +2,11 @@
 <html lang="en" ng-app="myApp">
 <head>
 	<title>Angular JS</title>
-	
+
 	<!-- LOAD JS FILES -->
 	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
-	<script type="text/javascript"  src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<!-- END OF JS FILES -->
 
@@ -17,10 +18,10 @@
 </head>
 <body>
 
-<div class="container col-md-6 col-md-offset-3 well">
-
-		<input type="text" placeholder="Search Person" ng-model="name" class="form-control">
-
+<div class="container col-md-6 col-md-offset-3 well offset-top">
+<h3 class="col-md-offset-3 highlighter-text">Angular JS App</h3>
+		<input type="text" placeholder="Search For a Person" ng-model="name" class="form-control">
+		<hr class="hr-divider-top">
 		<div ng-controller = "AuthorController">
 			<ul>
 				

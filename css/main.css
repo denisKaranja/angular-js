@@ -2,6 +2,18 @@
 	border: 1px solid gray;
 }
 
+.hr-divider-top{
+	border: 1px solid black;
+}
+
 .pointer{
 	cursor: pointer;
+}
+
+.offset-top{
+	margin-top: 3%;
+}
+
+.highlighter-text{
+	color: #F15725;
 }
