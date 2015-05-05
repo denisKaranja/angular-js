@@ -10,7 +10,7 @@ searchApp.config(["$routeProvider", function($routeProvider){
 		controller: 'ListController'
 	}).
 	when('/details/:itemId', {
-		templateUrl: 'templates/details.hmtl',
+		templateUrl: 'templates/details.html',
 		controller:  'DetailsController'
 	}).
 	otherwise({
