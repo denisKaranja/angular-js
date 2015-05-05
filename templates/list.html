@@ -23,7 +23,7 @@
 
 	</div>
 	<hr class="hr-divider-top">
-	<ul class="list-unstyled persons-list">
+	<ul class="list-unstyled persons-list" ng-show="query">
 		
 		<li ng-animate="'animate'" ng-repeat="person in persons |filter:query |orderBy: personsOrder:direction" class="pointer" title="Click to view {{person.name}}'s Bio">
 			<a href="#/details/{{ persons.indexOf(person) }}">
