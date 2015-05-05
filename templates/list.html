@@ -1,7 +1,7 @@
 <section>
 	
 	<div class="search">
-	
+
 		<input type="text" placeholder="Search For a Person" ng-model="query" class="form-control">
 		<br>
 		<label class="formgroup">
@@ -26,9 +26,11 @@
 	<ul>
 		
 		<li ng-repeat="person in persons |filter:query |orderBy: personsOrder:direction" class="pointer" title="Click to view {{person.name}}'s Bio">
-			 <h4> {{person.name}} </h4>
-			 <p> {{ person.title + ', '+ person.company }} </p>
-			 <hr class="hr-divider">
+			<a href="#/details/{{ persons.indexOf(person) }}">
+				 <h4> {{person.name}} </h4>
+				 <p> {{ person.title + ', '+ person.company }} </p>
+				 <hr class="hr-divider">
+			</a>
 		</li>
 
 	</ul>

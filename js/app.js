@@ -9,6 +9,10 @@ searchApp.config(["$routeProvider", function($routeProvider){
 		templateUrl: 'templates/list.html',
 		controller: 'ListController'
 	}).
+	when('/details/:itemId', {
+		templateUrl: 'templates/details.hmtl',
+		controller:  'DetailsController'
+	}).
 	otherwise({
 		redirectTo: '/list'
 	});
