@@ -27,5 +27,13 @@ personsController.controller('DetailsController', ['$scope', '$http', '$routePar
 
 			/*get which item*/
 			$scope.whichItem = $routeParams.itemId; 
+
+			/*previous button hit*/
+			$scope.prevItem = ($routeParams.itemId > 0) ? Number($routeParams.itemId) - 1: $scope.persons.length - 1;
+
+			/*next button hit*/
+			 $scope.nextItem = ($routeParams.itemId < ($scope.persons.length - 1)) ? Number($routeParams.itemId) + 1: 0;
+
+
 		});
 }]);

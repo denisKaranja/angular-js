@@ -1,5 +1,7 @@
 <section>
 	<div ng-model="persons" class="well">
+	<a href="#/details/{{prevItem}}" class="btn btn-lg">&lt;</a>
+	<a href="#/details/{{nextItem}}" class="btn btn-lg">&gt;</a>
 		<h1> {{persons[whichItem].name}} </h1>
 		<div class="info">
 			<h3> {{ persons[whichItem].title}} , {{ persons[whichItem].company}} </h3>
