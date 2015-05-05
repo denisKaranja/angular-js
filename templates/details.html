@@ -1,10 +1,10 @@
 <section>
 	<div ng-model="persons" class="well">
-	<a href="#/details/{{prevItem}}" class="btn btn-lg">&lt;</a>
-	<a href="#/details/{{nextItem}}" class="btn btn-lg">&gt;</a>
-		<h1> {{persons[whichItem].name}} </h1>
+	<a href="#/details/{{prevItem}}" class="btn btn-info">&lt;</a>
+	<a href="#/details/{{nextItem}}" class="btn btn-info">&gt;</a>
+		<h2> {{persons[whichItem].name}} </h2>
 		<div class="info">
-			<h3> {{ persons[whichItem].title}} , {{ persons[whichItem].company}} </h3>
+			<h4 class="text text-warning"> {{ persons[whichItem].title}} , {{ persons[whichItem].company}} </h4>
 			<p> {{persons[whichItem].bio}} </p>
 		</div>
 	</div>

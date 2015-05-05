@@ -23,15 +23,17 @@ Details controller
 */
 personsController.controller('DetailsController', ['$scope', '$http', '$routeParams', function AuthorController($scope, $http, $routeParams){
 		$http.get("js/data.json").success(function(data){
+			/*data from file*/
 			$scope.persons = data;
 
 			/*get which item*/
 			$scope.whichItem = $routeParams.itemId; 
 
-			/*previous button hit*/
+			/*NAVIGATION BUTTONS*/
+				/*previous nav btn*/
 			$scope.prevItem = ($routeParams.itemId > 0) ? Number($routeParams.itemId) - 1: $scope.persons.length - 1;
 
-			/*next button hit*/
+				/*next nav btn*/
 			 $scope.nextItem = ($routeParams.itemId < ($scope.persons.length - 1)) ? Number($routeParams.itemId) + 1: 0;
 
 

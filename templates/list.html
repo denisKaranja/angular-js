@@ -5,8 +5,8 @@
 		<input type="text" placeholder="Search For a Person" ng-model="query" class="form-control">
 		<br>
 		<label class="formgroup">
-			By:
-			<select ng-model="personsOrder">
+		By:&nbsp;&nbsp;
+			<select ng-model="personsOrder" class="form-control">
 				<option value="name">Name</option>
 				<option value="company">Company</option>
 			</select>
@@ -23,7 +23,7 @@
 
 	</div>
 	<hr class="hr-divider-top">
-	<ul>
+	<ul class="list-unstyled">
 		
 		<li ng-repeat="person in persons |filter:query |orderBy: personsOrder:direction" class="pointer" title="Click to view {{person.name}}'s Bio">
 			<a href="#/details/{{ persons.indexOf(person) }}">
