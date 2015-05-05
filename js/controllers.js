@@ -2,7 +2,7 @@
 All controllers for the App
 @ __author = Denis Karanja
 */
-var personsController = angular.module("personsController", []);
+var personsController = angular.module("personsController", ['ngAnimate']);
 
 /*
 List controller
@@ -16,6 +16,7 @@ personsController.controller('ListController', ['$scope', '$http', function Auth
 			$scope.personsOrder = 'name'; 
 		});
 }]);
+
 
 /*
 Details controller
@@ -39,3 +40,4 @@ personsController.controller('DetailsController', ['$scope', '$http', '$routePar
 
 		});
 }]);
+

@@ -17,3 +17,41 @@
 .highlighter-text{
 	color: #F15725;
 }
+.persons-list li{
+	opacity: 0.9;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.persons-list li:hover{
+	background: #FDF6E3;
+	opacity: 1;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*animation using angular*/
+.persons.ng-enter.ng-enter-active,
+.persons.ng-leave{
+	opacity: 1;
+	height: 80px;
+	overflow: hidden;
+}
+.persons.ng-leave.ng-leave-active,
+.persons.ng-enter{
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
